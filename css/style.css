@@ -26,6 +26,7 @@ img{
 
 h1, h2, a{
 	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
 }
 
 a{
@@ -38,6 +39,42 @@ a:visited, a:hover, a:focus{
 
 h3, h4, h5, h6{
 	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	margin: 0 0 15px;
+}
+
+h2{
+	font-size: 40px;
+	text-align: center;
+	margin: 0 0 60px;
+}
+
+h3{
+	font-size: 30px;
+}
+ul{
+	list-style-type: none;
+	line-height: 2em;
+	padding: 0;
+	margin: 0;
+}
+
+@media only screen and (max-width: 1500px){
+	h2{
+		margin-bottom: 30px;
+	}
+}
+
+@media only screen and (max-width: 800px){
+	h2{
+		font-size: 30px;
+	}
+	h3{
+		font-size: 24px;
+	}
+	ul{
+		font-size: 14px;
+	}
 }
 
 /* General */
@@ -169,6 +206,7 @@ h3, h4, h5, h6{
 
 .surgeon-photo{
 	display: block;
+	width: 100%;
 }
 
 .sps-container{
@@ -267,5 +305,153 @@ h3, h4, h5, h6{
 	}
 	.info {
 	  font-size: 18px;
+	}
+}
+
+/* About section */
+.about-surgeon-section{
+	background-color: #d3daec;
+	padding: 90px 0;
+}
+.about-container{
+	display: grid;
+	grid-template-columns: 2fr 3fr;
+	grid-gap: 90px;
+	padding-bottom: 90px;
+}
+.about-slide img{
+	width: 100%;
+}
+.about-slider-container{
+	position: relative;
+}
+.custom-slider-nav{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+.about-slide{
+	margin: 0 15px;
+}
+.slick-list{
+	margin: 0 -15px;
+}
+.custom-slider-nav img{
+	width: 20px;
+}
+.custom-slider-nav.prev{
+	left: -50px;
+}
+.custom-slider-nav.next{
+	right: -50px;
+}
+.about-text p{
+	line-height: 2;
+	font-size: 20px;
+	margin: 0;
+}
+
+@media only screen and (max-width: 1500px){
+	.about-surgeon-section{
+		padding: 60px 0;
+	}
+	.about-container{
+		grid-gap: 60px;
+		padding-bottom: 60px;
+	}
+}
+
+@media only screen and (max-width: 1100px){
+	.about-slider-container{
+		max-width: 80%;
+		margin: 0 auto;
+	}
+}
+@media only screen and (max-width: 800px){
+	.about-surgeon-section{
+		padding: 30px 0;
+	}
+	.about-container{
+		grid-gap: 30px;
+		padding-bottom: 30px;
+		grid-template-columns: 1fr 1fr;
+	}
+	.about-text p{
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 767px){
+	.about-container {
+    grid-gap: 15px;
+    padding-bottom: 15px;
+    grid-template-columns: 1fr;
+	}
+	.about-surgeon-section{
+		padding: 15px 0;
+	}
+}
+
+/* Services section */
+.services-section{
+	background-color: #0e162c;
+	padding: 90px 0;
+	color: white;
+}
+.services-container{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 200px;
+	grid-row-gap: 60px;
+}
+.servise-block{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 30px;
+}
+.sb-text-block h3{
+	visibility: hidden;
+}
+.sb-image-block h3{
+	text-align: center;
+}
+.sb-image-block img{
+	width: 100%;
+}
+
+@media only screen and (max-width: 1500px){
+	.services-section{
+		padding: 60px 0;
+	}
+	.services-container{
+		grid-row-gap: 30px;
+	}
+}
+
+@media only screen and (max-width: 1100px){
+	.services-container{
+		grid-column-gap: 15px;
+	}
+	.servise-block{
+		grid-gap: 15px;
+	}
+}
+
+@media only screen and (max-width: 800px){
+	.services-section{
+		padding: 30px 0;
+	}
+	.services-container{
+		grid-row-gap: 15px;
+	}
+}
+
+@media only screen and (max-width: 767px){
+	.services-container {
+    grid-template-columns: 1fr;
+	}
+	.servise-block {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
 	}
 }
