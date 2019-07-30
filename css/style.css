@@ -14,10 +14,15 @@ main{
 
 }
 footer{
+<<<<<<< HEAD
 	color: blue;
 	border: 1px solid blue;
 	margin: 15px;
 	padding: 15px;
+=======
+	background-color: var(--blue_color);
+	color: #fff;
+>>>>>>> e54766f... #5: Done website
 }
 
 img{
@@ -41,12 +46,20 @@ h3, h4, h5, h6{
 	font-family: 'Roboto', sans-serif;
 	text-transform: uppercase;
 	margin: 0 0 15px;
+<<<<<<< HEAD
+=======
+	font-weight: normal;
+>>>>>>> e54766f... #5: Done website
 }
 
 h2{
 	font-size: 40px;
 	text-align: center;
 	margin: 0 0 60px;
+<<<<<<< HEAD
+=======
+	letter-spacing: 1px;
+>>>>>>> e54766f... #5: Done website
 }
 
 h3{
@@ -88,7 +101,11 @@ ul{
 }
 
 /* Header */
+<<<<<<< HEAD
 .header-container{
+=======
+.header-container, .footer-container {
+>>>>>>> e54766f... #5: Done website
 	display: grid;
 	grid-template-columns: 2fr 1fr;
 }
@@ -100,6 +117,15 @@ ul{
 .menu-link, .title, .right-header-block a{
 	color: var(--blue_color);
 }
+<<<<<<< HEAD
+=======
+.right-footer-block a{
+	color: #fff;
+}
+.left-footer-block .title {
+	color: #fff;
+}
+>>>>>>> e54766f... #5: Done website
 .phone{
 	font-size: 18px;
 }
@@ -113,6 +139,7 @@ ul{
 .social-link:last-of-type{
 	margin: 0;
 }
+<<<<<<< HEAD
 .left-header-block, .right-header-block{
 	display: flex;
 }
@@ -120,6 +147,15 @@ ul{
 	align-items: center;
 }
 .right-header-block{
+=======
+.left-header-block, .right-header-block, .left-footer-block, .right-footer-block {
+	display: flex;
+}
+.left-header-block, .left-footer-block{
+	align-items: center;
+}
+.right-header-block, .right-footer-block{
+>>>>>>> e54766f... #5: Done website
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: flex-end;
@@ -162,11 +198,23 @@ ul{
 }
 
 @media only screen and (max-width: 767px){
+<<<<<<< HEAD
 	.header-container{
 		grid-template-columns: 1fr;
 	}
 	.right-header-block{
 		margin-top: 10px;
+=======
+	.header-container, .footer-container {
+		grid-template-columns: 1fr;
+	}
+	.right-header-block, .right-footer-block{
+		margin-top: 10px;
+		align-items: flex-start;
+	}
+	.phone{
+		margin-bottom: 7px;
+>>>>>>> e54766f... #5: Done website
 	}
 	.title{
 		font-size: 18px;
@@ -175,12 +223,28 @@ ul{
 	.left-header-block img{
 		max-width: 60px;
 	}
+<<<<<<< HEAD
 	.menu-wrapper{
 		position: relative;
 		text-align: center;
 	}
 	.menu-link{
 		margin: 0;
+=======
+	.left-footer-block img{
+		max-width: 60px;
+	}
+	.menu-wrapper{
+		position: relative;
+		text-align: center;
+		display: flex;
+		justify-content: space-between;
+	}
+	.menu-link{
+		margin: 0;
+		padding: 0;
+		width: 25%;
+>>>>>>> e54766f... #5: Done website
 		line-height: 2em;
 	}
 	.menu-link:first-of-type {
@@ -190,7 +254,11 @@ ul{
 
 @media only screen and (max-width: 325px){
 	.menu-link{
+<<<<<<< HEAD
 		padding: 5px 7px;
+=======
+		font-size: 12px;
+>>>>>>> e54766f... #5: Done website
 	}
 	.title {
 	  font-size: 16px;
@@ -261,15 +329,25 @@ ul{
 @media only screen and (max-width: 1100px){
 	.skills{
 		font-size: 14px;
+<<<<<<< HEAD
 		grid-gap: 15px;
+=======
+		grid-gap: 20px;
+>>>>>>> e54766f... #5: Done website
 		margin: 2vh auto;
 	}
 }
 
 @media only screen and (max-width: 800px){
 	.skill {
+<<<<<<< HEAD
     flex-direction: column;
     text-align: center;
+=======
+    text-align: left;
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+>>>>>>> e54766f... #5: Done website
 	}
 	.skill p{
 		margin-left: 0;
@@ -310,7 +388,11 @@ ul{
 
 /* About section */
 .about-surgeon-section{
+<<<<<<< HEAD
 	background-color: #d3daec;
+=======
+	background-color: #effaff;
+>>>>>>> e54766f... #5: Done website
 	padding: 90px 0;
 }
 .about-container{
@@ -390,6 +472,15 @@ ul{
 	.about-surgeon-section{
 		padding: 15px 0;
 	}
+<<<<<<< HEAD
+=======
+	.custom-slider-nav.next {
+	  right: -35px;
+	}
+	.custom-slider-nav.prev {
+	  left: -35px;
+	}
+>>>>>>> e54766f... #5: Done website
 }
 
 /* Services section */
@@ -455,3 +546,143 @@ ul{
     grid-template-columns: 2fr 3fr;
 	}
 }
+<<<<<<< HEAD
+=======
+
+/* Testimonials section */
+.testimonials-section {
+	background-color: #effaff;
+	padding: 90px 0;
+}
+.testimonials-slider .slick-list {
+	margin: 0 -50px;
+  padding: 30px 0;
+  margin-top: -30px;
+}
+.testimonial-slide {
+	margin: 0 50px;
+	background: #fff;
+  padding: 20px;
+	text-align: center;
+  box-shadow: 6px 6px 23px 0px #d6d6d6;
+}
+.testimonials-slider-container {
+	position: relative;
+}
+.testimonials-slider-container .custom-slider-nav.prev {
+	left: 50px;
+	z-index: 1;
+}
+.testimonials-slider-container .custom-slider-nav.next {
+	right: 50px;
+	z-index: 1;
+}
+.testimonial-photo {
+	border-radius: 50%;
+	width: 220px;
+	height: 220px;
+	object-fit: cover;
+	margin: 25px auto;
+}
+.testimonial-text {
+  line-height: 2em;
+}
+
+@media only screen and (max-width: 1500px) {
+	.testimonials-section {
+    padding: 60px 0;
+	}
+}
+
+@media only screen and (max-width: 1100px){
+	.testimonials-slider .slick-list {
+		margin: -30px -15px 0;
+	}
+	.testimonial-slide {
+		margin: 0 25px;
+	  box-shadow: 6px 6px 13px 0px #d6d6d6;
+	}
+	.testimonials-slider-container {
+		max-width: 90%;
+		margin: 0 auto;
+	}
+	.testimonials-slider-container .custom-slider-nav.prev {
+		left: -35px;
+	}
+	.testimonials-slider-container .custom-slider-nav.next {
+		right: -35px;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.testimonials-section {
+    padding: 30px 0;
+	}
+	.testimonial-photo {
+		width: 200px;
+		height: 200px;
+    margin-top: 0;
+	}
+	.testimonial-text {
+		font-size: 14px;
+		margin: 0;
+	}
+}
+
+@media only screen and (max-width: 767px){
+	.testimonials-slider-container .custom-slider-nav.prev {
+		left: -25px;
+	}
+	.testimonials-slider-container .custom-slider-nav.next {
+		right: -25px;
+	}
+}
+
+/* Footer container */
+.contacts-section{
+	position: relative;
+}
+.contacts-section iframe{
+  min-height: 70vh;
+}
+.footer-container{
+	padding: 15px;
+}
+.footer-container .icon{
+	filter: contrast(100) grayscale(1) contrast(100);
+}
+.footer-logo{
+	border: 2px solid white;
+	border-radius: 15px;
+}
+.contacts-header{
+	padding: 15px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+}
+.contacts-header h2{
+	margin: 0;
+	text-align: left;
+}
+.contacts-header p{
+	text-align: right;
+	font-size: 18px;
+	margin: 5px 0;
+}
+
+@media only screen and (max-width: 1100px){
+	.contacts-section iframe {
+	  min-height: 45vh;
+	}
+}
+
+@media only screen and (max-width: 800px){
+	.contacts-header{
+		grid-template-columns: 1fr;
+	}
+	.contacts-header p {
+    text-align: left;
+	}
+}
+>>>>>>> e54766f... #5: Done website
